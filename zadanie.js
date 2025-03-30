@@ -118,7 +118,7 @@ const createMostCommonLetter = createPersonAge.map((person) => {
       count = counter[letter];
 
     } else if (count === counter[letter] && letter < thisLetter) { 
-      mostCommon = letter;
+      thisLetter = letter;
     }
   }
   person.mostCommonLetter = {
